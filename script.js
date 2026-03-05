@@ -86,3 +86,12 @@ async function init() {              /******** question9 et 10 ********/
 
 init();
 
+document.getElementById("my-input").addEventListener("input", filtrage);
+document.getElementById("liste-pays").addEventListener("change", filtrage);
+document.getElementById("bouton").addEventListener("click", filtrage);
+
+function reinitialiser() {
+  document.getElementById("my-input").value = ""
+  document.getElementById("liste-pays").value = ""
+  filtrage()
+}
