@@ -1,0 +1,176 @@
+.recherche {
+  align-items: end;
+}
+
+input::placeholder {
+  color: rgb(17, 24, 39, .55)
+}
+
+input,
+select,
+button {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+  box-shadow: 0 10px 24px rgba(37, 99, 235, .18);
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: rgba(37, 99, 235, .35);
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, .12);
+}
+
+button:hover {
+  filter: brightness(1.05)
+}
+
+.carte:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 22px 70px rgba(17, 24, 39, .18)
+}
+
+.carte {
+    overflow: hidden;
+    box-shadow: 0 14px 40px rgba(17, 24, 39, .12);
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.drapeau {
+  aspect-ratio: 16/10;
+  object-fit: cover;
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: 2.2rem
+}
+
+p:first-of-type {
+  margin: 0;
+  color: #4b5563;
+}
+
+label {
+  display: block;
+  font-size: .9rem;
+  margin-bottom: 6px
+}
+
+.nom {
+  margin: 0;
+  font-size: 1.05rem
+}
+
+article > div:first-of-type > div:first-of-type {
+  margin-top: 8px;
+
+  & span.continent {
+    font-size: .8rem;
+    color: #4b5563;
+    border: 1px solid rgba(17, 24, 39, .12);
+    padding: 5px 8px;
+    border-radius: 999px
+  }
+}
+
+dt {
+  color: rgba(17, 24, 39, .65)
+}
+
+dd {
+  margin: 0
+}
+
+.carte p {
+  margin: 0 0 6px;
+  font-size: .85rem;
+  color: rgba(17, 24, 39, .6)
+}
+
+.recherche div {
+  display: flex;
+  flex-direction: column
+}
+
+/***Completer***/
+
+body{
+  margin : 0;
+  padding : 0;
+  background-color: #eef2ff;
+  color: #111827;
+  font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+}
+
+.en-tete,.principal {
+  width: 1100px;
+  max-width: 98vw;
+  margin : auto;
+  padding : 18px 0px;
+}
+
+.recherche{
+  display: grid;
+  grid-template-columns: 1fr 220px 180px;
+  gap: 10px;
+  margin-top:16px;
+  padding:14px;
+  background-color: white;
+  border-width: 1px;
+  border-radius: 18px;
+  border-color: white;
+}
+
+#liste-pays, #my-input{
+  background-color: white;
+  padding:12px;
+  border-width: 1px;
+  border-radius: 14px;
+  border-color: #d4d4d4;
+  color: #111827;
+}
+
+.bouton{
+  background-color: dodgerblue;
+  padding:12px 14px;
+  border-width: 1px;
+  border-radius: 14px;
+  border-color: #d4d4d4;
+  color: white;
+}
+
+#grid {
+  display : grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 12px;
+  margin-top: 14px;
+
+}
+
+.carte{
+  background-color: white;
+  border-width: 1px;
+  border-radius: 18px;
+  border-color: #111827;
+}
+
+.card-data{
+  padding: 12px 14px;
+}
+
+dl {
+  border-width: 1px;
+  border-color: #111827;
+  border-radius: 14px;
+  margin-top: 10px;
+  padding : 10px;
+  display : grid;
+  grid-template-columns: 90px 1fr;
+  row-gap: 6px;
+  column-gap:10px;
+  font-size: .9rem;
+}
