@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Liste de Pays</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="en-tete">
+      <h1>Explorateur de données geographiques</h1>
+      <p>Liste des membres pays de l'ONU </p>
+    </header>
+
+
+    <main class="principal">
+      <section class="recherche">
+        <div>
+          <label for="">Recherche</label>
+          <input type="text" id="my-input" name="" placeholder="Nom du pays" />
+        </div>
+        <div>
+          <label for="liste-pays">Continent</label>
+          <select name="" id="liste-pays">
+            <option >Tous</option>
+            <option >Afrique</option>
+            <option >Amérique</option>
+            <option >Asie</option>
+            <option >Europe</option>
+            <option >Océanie</option>
+          </select>
+        </div>
+        <button class="bouton">Reinitialiser</button>
+      </section>
+      <section id ="grid">
+          <article class="carte">
+        <img src="" alt="" class="drapeau">
+        <h2></h2>
+        <div>
+          <span></span>
+        </div>
+        <div src ="" class="card-data">
+          <p>Données du pays</p>
+          <dl>
+           <dt>Capitale</dt>
+           <dd></dd>
+           <dt>Population</dt>
+           <dd></dd>
+           <dt>Superficie</dt>
+           <dd></dd>
+           <dt>Monnaie</dt>
+           <dd></dd>
+           <dt>Domaine</dt>
+           <dd></dd>
+          </dl>
+        </div>
+      </article>
+        <article class="carte">
+        <img src="" alt="">
+        <h2></h2>
+        <div>
+          <span></span>
+        </div>
+        <div class="card-data">
+          <p>Données du pays</p>
+          <dl>
+           <dt>Capitale</dt>
+           <dd></dd>
+           <dt>Population</dt>
+           <dd></dd>
+           <dt>Superficie</dt>
+           <dd></dd>
+           <dt>Monnaie</dt>
+           <dd></dd>
+           <dt>Domaine</dt>
+           <dd></dd>
+          </dl>
+        </div>
+      </article>  
+      <article class="carte">
+        <img src="" alt="" class="drapeau">
+        <h2></h2>
+        <div>
+          <span></span>
+        </div>
+        <div class="card-data">
+          <p>Données du pays</p>
+          <dl>
+           <dt>Capitale</dt>
+           <dd></dd>
+           <dt>Population</dt>
+           <dd></dd>
+           <dt>Superficie</dt>
+           <dd></dd>
+           <dt>Monnaie</dt>
+           <dd></dd>
+           <dt>Domaine</dt>
+           <dd></dd>
+          </dl>
+        </div>
+      </article>  
+      <article class="carte">
+        <img src="" alt="" class="drapeau">
+        <h2></h2>
+        <div>
+          <span></span>
+        </div>
+        <div class="card-data">
+          <p>Données du pays</p>
+          <dl>
+           <dt>Capitale</dt>
+           <dd></dd>
+           <dt>Population</dt>
+           <dd></dd>
+           <dt>Superficie</dt>
+           <dd></dd>
+           <dt>Monnaie</dt>
+           <dd></dd>
+           <dt>Domaine</dt>
+           <dd></dd>
+          </dl>
+        </div>
+      </article>  
+      <article class="carte">
+        <img src="" alt="" class="drapeau">
+        <h2></h2>
+        <div>
+          <span></span>
+        </div>
+        <div class="card-data">
+          <p>Données du pays</p>
+          <dl>
+           <dt>Capitale</dt>
+           <dd></dd>
+           <dt>Population</dt>
+           <dd></dd>
+           <dt>Superficie</dt>
+           <dd></dd>
+           <dt>Monnaie</dt>
+           <dd></dd>
+           <dt>Domaine</dt>
+           <dd></dd>
+          </dl>
+        </div>
+      </article>
+
+
+      </section>
+    </main>
+
+    <template id="mon-template"> 
+      <article class="carte">
+        <img  class="drapeau" src="{{src-image}}" alt="{{alt-image}}">
+        <h2>{{nom-pays}}</h2>
+        <div>
+          <span></span>
+        </div>
+        <div>
+          <p>Données du pays</p>
+          <dl>
+           <dt>Capitale</dt>
+           <dd></dd>
+           <dt>Population</dt>
+           <dd></dd>
+           <dt>Superficie</dt>
+           <dd></dd>
+           <dt>Monnaie</dt>
+           <dd></dd>
+           <dt>Domaine</dt>
+           <dd></dd>
+          </dl>
+        </div>
+      </article>
+    </template>
+
+    <!-- Ligne à placer tout en bas de la dernière section de la page -->
+    <div id="empty" class="empty" style="display:none"></div>
+
+</body>
+
+</html>
